@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team – Lomvi Robotics</title>
+  <meta name="description" content="Lomvi Robotics – an ETH Zürich Focus Project building an autonomous, non-invasive soft underwater robot that swims like a guillemot.">
+  <link rel="icon" href="../images/lomvi-logo.svg">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div style="position:relative;background:var(--lomvi-ice);">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:30;background:transparent;border-bottom:1px solid transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:background var(--dur-slow) var(--ease-glide);" id="site-header">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;display:block;cursor:pointer;" onclick="location.href='../'" id="site-logo">
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;" class="nav-desktop">
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../project/'" data-nav="">Project</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../progress/'" data-nav="">Progress</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-akzent);cursor:pointer;" onclick="location.href='../team/'" data-nav="" data-active="">Team</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../partners/'" data-nav="">Partners</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../contact/'" data-nav="">Contact</span>
+        
+      </nav>
+      
+    <button class="nav-mobile" id="menu-btn" aria-label="Menu" style="width:44px;height:44px;border:0;background:transparent;color:var(--lomvi-ice);align-items:center;justify-content:center;cursor:pointer;padding:0;"><span aria-hidden="true" style="display:inline-block;flex:none;width:26px;height:26px;background:currentColor;-webkit-mask:url(https://unpkg.com/lucide-static@0.460.0/icons/menu.svg) center/contain no-repeat;mask:url(https://unpkg.com/lucide-static@0.460.0/icons/menu.svg) center/contain no-repeat;"></span></button></div>
+    
+  <nav id="mobile-menu" style="display:none;flex-direction:column;padding:8px 24px 24px;background:var(--lomvi-ice);border-bottom:1px solid var(--border-tint);"><a href="../project/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Project</a><a href="../progress/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Progress</a><a href="../team/" style="font:700 22px/1 var(--font-display);color:var(--lomvi-akzent);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Team</a><a href="../partners/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Partners</a><a href="../contact/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Contact</a></nav></header>
+
+    
+
+  
+
+  
+
+  
+    <div data-screen-label="Team">
+<div style="height:96px;background:var(--lomvi-koerper);"></div>
+<!-- TEAM -->
+  <section id="team" data-screen-label="Team" style="padding:120px 0;background:var(--lomvi-bauch);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:48px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:32px 64px;align-items:end;">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:var(--fg-1);">The LOMVI team</h2>
+        </div>
+        <p style="margin:0;font:300 20px/1.5 var(--font-body);color:var(--fg-2);text-wrap:pretty;">Mechanical Engineering (D-MAVT) and Health Science and Technology (D-HEST) students from ETH Zürich, supervised by the Soft Robotics Lab. We learn by building, testing and iterating in the water.</p>
+      </div>
+      <img src="../images/teamphoto.jpg" alt="The Lomvi Robotics team" style="width:100%;height:clamp(280px,40vw,520px);object-fit:cover;border-radius:var(--radius-fin);display:block;box-shadow:var(--shadow-2);">
+      <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:32px 20px;" class="team-grid">
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Vincent.jpg" alt="Vincent van Kleef" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Vincent van Kleef</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Mechanics</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Riccardo.jpg" alt="Riccardo Nicosia" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Riccardo Nicosia</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Mechanics</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Nyah.jpg" alt="Nyah Thöny" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Nyah Thöny</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Mechanics</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Gabriel.jpg" alt="Gabriel Stocker" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Gabriel Stocker</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Mechanics</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Caspar.jpg" alt="Caspar Freiherr v. Heyl zu Herrnsheim" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Caspar Freiherr v. Heyl zu Herrnsheim</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Software</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Rugilé.jpg" alt="Rugilé Urnieziute" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Rugilé Urnieziute</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Software</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Arthur.jpg" alt="Arthur Grosman" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Arthur Grosman</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Software</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Niels.jpg" alt="Niels Tapuy Cerda" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Niels Tapuy Cerda</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Software</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Taigo.jpg" alt="Taigo Sakai" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Taigo Sakai</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Electronics</div>
+          </div>
+        
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <img src="../images/Gioele.jpg" alt="Gioele Bonomo" style="width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center top;border-radius:var(--radius-fin);background:var(--lomvi-ice);display:block;margin-bottom:8px;">
+            <div style="font:700 16px/1.25 var(--font-display);color:var(--fg-1);text-wrap:balance;">Gioele Bonomo</div>
+            <div style="font:700 11px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-1);">Electronics</div>
+          </div>
+        
+      </div>
+      <div style="display:flex;flex-direction:column;gap:16px;padding-top:32px;border-top:1px solid rgba(12,58,73,.15);">
+        <div style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);">Supervisors · Soft Robotics Lab</div>
+        <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 24px;" class="sup-grid">
+          
+            <div style="display:flex;align-items:center;gap:14px;">
+              <img src="../images/Katzschmann.jpg" alt="Prof. Robert Katzschmann" style="width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center top;background:var(--lomvi-ice);">
+              <div style="display:flex;flex-direction:column;gap:2px;">
+                <span style="font:700 15px/1.25 var(--font-display);color:var(--fg-1);">Prof. Robert Katzschmann</span>
+                <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-1);">Professor</span>
+              </div>
+            </div>
+          
+            <div style="display:flex;align-items:center;gap:14px;">
+              <img src="../images/Hinchet.jpg" alt="Dr. Ronan Hinchet" style="width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center top;background:var(--lomvi-ice);">
+              <div style="display:flex;flex-direction:column;gap:2px;">
+                <span style="font:700 15px/1.25 var(--font-display);color:var(--fg-1);">Dr. Ronan Hinchet</span>
+                <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-1);">Senior scientist</span>
+              </div>
+            </div>
+          
+            <div style="display:flex;align-items:center;gap:14px;">
+              <img src="../images/Appius.png" alt="Aurel Appius" style="width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center top;background:var(--lomvi-ice);">
+              <div style="display:flex;flex-direction:column;gap:2px;">
+                <span style="font:700 15px/1.25 var(--font-display);color:var(--fg-1);">Aurel Appius</span>
+                <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-1);">Supervisor</span>
+              </div>
+            </div>
+          
+            <div style="display:flex;align-items:center;gap:14px;">
+              <img src="../images/Kazemipour.jpg" alt="Amirhossein Kazemipour" style="width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center top;background:var(--lomvi-ice);">
+              <div style="display:flex;flex-direction:column;gap:2px;">
+                <span style="font:700 15px/1.25 var(--font-display);color:var(--fg-1);">Amirhossein Kazemipour</span>
+                <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-1);">Supervisor</span>
+              </div>
+            </div>
+          
+            <div style="display:flex;align-items:center;gap:14px;">
+              <img src="../images/Michelis.jpg" alt="Mike Michelis" style="width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center top;background:var(--lomvi-ice);">
+              <div style="display:flex;flex-direction:column;gap:2px;">
+                <span style="font:700 15px/1.25 var(--font-display);color:var(--fg-1);">Mike Michelis</span>
+                <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-1);">Supervisor</span>
+              </div>
+            </div>
+          
+            <div style="display:flex;align-items:center;gap:14px;">
+              <img src="../images/Bolt.png" alt="Alessia Bolt" style="width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center top;background:var(--lomvi-ice);">
+              <div style="display:flex;flex-direction:column;gap:2px;">
+                <span style="font:700 15px/1.25 var(--font-display);color:var(--fg-1);">Alessia Bolt</span>
+                <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-1);">Coach
+</span>
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    </div>
+  
+
+  
+
+  
+
+<footer style="background:var(--depth-10);color:var(--fg-inverse-2);">
+    <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
+      <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+        <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;">
+        <div style="width:1px;height:40px;background:var(--border-on-dark);"></div>
+        <img src="../images/eth-zurich.png" alt="ETH Zürich" style="height:28px;filter:brightness(0) invert(1);">
+        <img src="../images/srl-square-white.png" alt="Soft Robotics Lab" style="height:44px;">
+        <div style="margin-left:auto;display:flex;align-items:center;gap:20px;">
+          
+            <a href="https://www.linkedin.com/company/lomvi-robotics" target="_blank" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/linkedin.svg" alt="LinkedIn" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.instagram.com/lomvi.robotics/" target="_blank" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/instagram.svg" alt="Instagram" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.youtube.com/@lomvi-robotics" target="_blank" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/youtube.svg" alt="YouTube" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.facebook.com/profile.php?id=61594476253714" target="_blank" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/facebook.svg" alt="Facebook" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--border-on-dark);font:400 13px/1.5 var(--font-body);">
+        <span style="display:flex;gap:20px;flex-wrap:wrap;"><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../project/'">Project</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../progress/'">Progress</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../team/'">Team</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../partners/'">Partners</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../contact/'">Contact</span></span>
+        
+        <span style="display:flex;gap:20px;"><a href="#" style="color:var(--fg-inverse-2);">Imprint</a><a href="#" style="color:var(--fg-inverse-2);">Privacy</a><span>© 2026 Lomvi Robotics</span></span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

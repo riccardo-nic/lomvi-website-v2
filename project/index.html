@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project – Lomvi Robotics</title>
+  <meta name="description" content="Lomvi Robotics – an ETH Zürich Focus Project building an autonomous, non-invasive soft underwater robot that swims like a guillemot.">
+  <link rel="icon" href="../images/lomvi-logo.svg">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div style="position:relative;background:var(--lomvi-ice);">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:30;background:transparent;border-bottom:1px solid transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:background var(--dur-slow) var(--ease-glide);" id="site-header">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;display:block;cursor:pointer;" onclick="location.href='../'" id="site-logo">
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;" class="nav-desktop">
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-akzent);cursor:pointer;" onclick="location.href='../project/'" data-nav="" data-active="">Project</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../progress/'" data-nav="">Progress</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../team/'" data-nav="">Team</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../partners/'" data-nav="">Partners</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../contact/'" data-nav="">Contact</span>
+        
+      </nav>
+      
+    <button class="nav-mobile" id="menu-btn" aria-label="Menu" style="width:44px;height:44px;border:0;background:transparent;color:var(--lomvi-ice);align-items:center;justify-content:center;cursor:pointer;padding:0;"><span aria-hidden="true" style="display:inline-block;flex:none;width:26px;height:26px;background:currentColor;-webkit-mask:url(https://unpkg.com/lucide-static@0.460.0/icons/menu.svg) center/contain no-repeat;mask:url(https://unpkg.com/lucide-static@0.460.0/icons/menu.svg) center/contain no-repeat;"></span></button></div>
+    
+  <nav id="mobile-menu" style="display:none;flex-direction:column;padding:8px 24px 24px;background:var(--lomvi-ice);border-bottom:1px solid var(--border-tint);"><a href="../project/" style="font:700 22px/1 var(--font-display);color:var(--lomvi-akzent);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Project</a><a href="../progress/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Progress</a><a href="../team/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Team</a><a href="../partners/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Partners</a><a href="../contact/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Contact</a></nav></header>
+
+    
+
+  
+    <div data-screen-label="Project">
+<div style="height:96px;background:var(--lomvi-koerper);"></div>
+<!-- WHY -->
+  <section id="why" data-screen-label="Why" style="padding:120px 0;">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:64px;align-items:center;">
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:var(--fg-1);text-wrap:balance;">Most underwater robots are too loud for the life they study.</h2>
+        <p style="margin:0;font:300 20px/1.5 var(--font-body);color:var(--fg-2);text-wrap:pretty;">Propellers create noise, turbulence and a rigid hull that animals avoid. Researchers end up observing a disturbed ecosystem, we observe an undisturbed one.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <img src="../images/cover-photo2.png" alt="Guillemot flying underwater" style="width:100%;height:460px;object-fit:cover;border-radius:var(--radius-fin);display:block;box-shadow:var(--shadow-2);">
+        <div style="font:400 13px/1.4 var(--font-body);color:var(--fg-3);">Guillemots (<em>lomvi</em> in Norwegian), the robot's namesake · Photo: <a href="https://www.amustard.com" target="_blank">Alex Mustard</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section id="how" data-screen-label="How it works" style="padding:120px 0;background:#fff;border-top:1px solid var(--border-tint);border-bottom:1px solid var(--border-tint);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:56px;">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:32px 64px;align-items:end;">
+        <div style="display:flex;flex-direction:column;gap:20px;">
+          <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:var(--fg-1);">Wings, not propellers.</h2>
+        </div>
+        <p style="margin:0;font:300 20px/1.5 var(--font-body);color:var(--fg-2);text-wrap:pretty;">Flapping wings for thrust, a compliant body for gentle contact, and onboard autonomy for long missions.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;">
+        <img src="../images/wingstroke-sequence.jpg" alt="Guillemot wingstroke sequence" style="width:100%;height:auto;mix-blend-mode:multiply;display:block;">
+        <div style="font:400 13px/1.4 var(--font-body);color:var(--fg-3);">Guillemot wingstroke sequence, the reference for Lomvi's wing motion</div>
+      </div>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px;">
+        
+          <li style="background:var(--lomvi-ice);border:1px solid var(--border-tint);border-radius:var(--radius-fin);padding:28px;display:flex;flex-direction:column;gap:14px;">
+            
+            <h3 style="margin:0;font:700 24px/1.15 var(--font-display);letter-spacing:-0.01em;color:var(--fg-1);">Flapping wings</h3>
+            <p style="margin:0;font:400 16px/1.55 var(--font-body);color:var(--fg-2);">Two wings modelled on the guillemot generate thrust and steering. No propeller, no wake of noise.</p>
+          </li>
+        
+          <li style="background:var(--lomvi-ice);border:1px solid var(--border-tint);border-radius:var(--radius-fin);padding:28px;display:flex;flex-direction:column;gap:14px;">
+            
+            <h3 style="margin:0;font:700 24px/1.15 var(--font-display);letter-spacing:-0.01em;color:var(--fg-1);">Soft body</h3>
+            <p style="margin:0;font:400 16px/1.55 var(--font-body);color:var(--fg-2);">Compliant structures absorb contact and move with the water, making the robot gentle around animals and habitats.</p>
+          </li>
+        
+          <li style="background:var(--lomvi-ice);border:1px solid var(--border-tint);border-radius:var(--radius-fin);padding:28px;display:flex;flex-direction:column;gap:14px;">
+            
+            <h3 style="margin:0;font:700 24px/1.15 var(--font-display);letter-spacing:-0.01em;color:var(--fg-1);">Autonomous navigation</h3>
+            <p style="margin:0;font:400 16px/1.55 var(--font-body);color:var(--fg-2);">Onboard monitoring and control let Lomvi run long observation missions without human intervention.</p>
+          </li>
+        
+      </ol>
+    </div>
+  </section>
+
+  <!-- ROBOT -->
+  <section data-screen-label="The robot" style="padding:120px 0;background:var(--gradient-depth);color:var(--lomvi-ice);">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:64px;align-items:center;">
+      <div style="display:flex;flex-direction:column;gap:10px;">
+        <div style="width:100%;height:440px;border-radius:var(--radius-fin);background:repeating-linear-gradient(-45deg,var(--lomvi-ice) 0 22px,var(--lomvi-bauch) 22px 44px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;"><span style="font:700 16px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--fg-2);padding:10px 14px;border:1.5px solid var(--fg-3);border-radius:var(--radius-sm);background:var(--lomvi-ice);">Placeholder</span><span style="font:400 22px/1.2 var(--font-body);color:var(--fg-2);">GILMO v1</span></div>
+        
+      </div>
+      <div style="display:flex;flex-direction:column;gap:20px;">
+        <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:#fff;">A robot the ocean barely notices.</h2>
+        <p style="margin:0;font:300 20px/1.5 var(--font-body);color:var(--lomvi-ice);text-wrap:pretty;">Lomvi navigates on its own and gathers observations over long periods, without a diver or a pilot. Quiet enough to stay close, soft enough to be safe around marine life.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+<footer style="background:var(--depth-10);color:var(--fg-inverse-2);">
+    <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
+      <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+        <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;">
+        <div style="width:1px;height:40px;background:var(--border-on-dark);"></div>
+        <img src="../images/eth-zurich.png" alt="ETH Zürich" style="height:28px;filter:brightness(0) invert(1);">
+        <img src="../images/srl-square-white.png" alt="Soft Robotics Lab" style="height:44px;">
+        <div style="margin-left:auto;display:flex;align-items:center;gap:20px;">
+          
+            <a href="https://www.linkedin.com/company/lomvi-robotics" target="_blank" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/linkedin.svg" alt="LinkedIn" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.instagram.com/lomvi.robotics/" target="_blank" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/instagram.svg" alt="Instagram" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.youtube.com/@lomvi-robotics" target="_blank" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/youtube.svg" alt="YouTube" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.facebook.com/profile.php?id=61594476253714" target="_blank" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/facebook.svg" alt="Facebook" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--border-on-dark);font:400 13px/1.5 var(--font-body);">
+        <span style="display:flex;gap:20px;flex-wrap:wrap;"><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../project/'">Project</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../progress/'">Progress</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../team/'">Team</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../partners/'">Partners</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../contact/'">Contact</span></span>
+        
+        <span style="display:flex;gap:20px;"><a href="#" style="color:var(--fg-inverse-2);">Imprint</a><a href="#" style="color:var(--fg-inverse-2);">Privacy</a><span>© 2026 Lomvi Robotics</span></span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress – Lomvi Robotics</title>
+  <meta name="description" content="Lomvi Robotics – an ETH Zürich Focus Project building an autonomous, non-invasive soft underwater robot that swims like a guillemot.">
+  <link rel="icon" href="../images/lomvi-logo.svg">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div style="position:relative;background:var(--lomvi-ice);">
+
+  <header style="position:fixed;top:0;left:0;right:0;z-index:30;background:transparent;border-bottom:1px solid transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:background var(--dur-slow) var(--ease-glide);" id="site-header">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+      <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;display:block;cursor:pointer;" onclick="location.href='../'" id="site-logo">
+      <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;" class="nav-desktop">
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../project/'" data-nav="">Project</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-akzent);cursor:pointer;" onclick="location.href='../progress/'" data-nav="" data-active="">Progress</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../team/'" data-nav="">Team</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../partners/'" data-nav="">Partners</span>
+        
+          <span style="font:700 15px/1 var(--font-display);color:var(--lomvi-ice);cursor:pointer;" onclick="location.href='../contact/'" data-nav="">Contact</span>
+        
+      </nav>
+      
+    <button class="nav-mobile" id="menu-btn" aria-label="Menu" style="width:44px;height:44px;border:0;background:transparent;color:var(--lomvi-ice);align-items:center;justify-content:center;cursor:pointer;padding:0;"><span aria-hidden="true" style="display:inline-block;flex:none;width:26px;height:26px;background:currentColor;-webkit-mask:url(https://unpkg.com/lucide-static@0.460.0/icons/menu.svg) center/contain no-repeat;mask:url(https://unpkg.com/lucide-static@0.460.0/icons/menu.svg) center/contain no-repeat;"></span></button></div>
+    
+  <nav id="mobile-menu" style="display:none;flex-direction:column;padding:8px 24px 24px;background:var(--lomvi-ice);border-bottom:1px solid var(--border-tint);"><a href="../project/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Project</a><a href="../progress/" style="font:700 22px/1 var(--font-display);color:var(--lomvi-akzent);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Progress</a><a href="../team/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Team</a><a href="../partners/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Partners</a><a href="../contact/" style="font:700 22px/1 var(--font-display);color:var(--fg-1);padding:16px 0;border-bottom:1px solid var(--grey-200);text-decoration:none;">Contact</a></nav></header>
+
+    
+
+  
+
+  
+    <div data-screen-label="Progress">
+<div style="height:96px;background:var(--lomvi-koerper);"></div>
+<!-- PROGRESS -->
+  <section id="progress" data-screen-label="Progress" style="padding:120px 0;">
+    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:48px;">
+      
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;">
+        <div style="display:flex;flex-direction:column;gap:20px;max-width:640px;">
+          <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:var(--fg-1);">Project timeline</h2>
+          <p style="margin:0;font:300 20px/1.5 var(--font-body);color:var(--fg-2);text-wrap:pretty;">Here is where the project stands today.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+          <div style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);">Stage</div>
+          <div style="font:700 56px/1 var(--font-display);letter-spacing:-0.02em;color:var(--fg-1);">2<span style="font-weight:300;color:var(--fg-3);"> / 6</span></div>
+        </div>
+      </div><div style="height:6px;border-radius:var(--radius-pill);background:var(--lomvi-bauch);overflow:hidden;">
+        <div style="height:100%;width:33%;background:var(--lomvi-akzent);border-radius:var(--radius-pill);transition:width var(--dur-slow) var(--ease-glide);"></div>
+      </div>
+      <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:12px;">
+        
+          <li style="padding:20px;border-radius:var(--radius-lg);background:#fff;border:1px solid var(--border-tint);display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <span style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;color:var(--fg-accent);">01</span>
+              
+            </div>
+            <span style="font:700 18px/1.2 var(--font-display);color:var(--fg-1);">First concept phase</span>
+            <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-2);">September</span>
+            <span style="font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-accent);">Done</span>
+          </li>
+        
+          <li style="padding:20px;border-radius:var(--radius-lg);background:var(--lomvi-koerper);border:1px solid var(--lomvi-koerper);display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <span style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;color:var(--lomvi-akzent-light);">02</span>
+              
+            </div>
+            <span style="font:700 18px/1.2 var(--font-display);color:var(--lomvi-ice);">GILMO v1 · first prototype</span>
+            <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-inverse-2);">Mid November</span>
+            <span style="font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--lomvi-akzent-light);">In progress</span>
+          </li>
+        
+          <li style="padding:20px;border-radius:var(--radius-lg);background:transparent;border:1px solid var(--grey-200);display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <span style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;color:var(--fg-accent);">03</span>
+              
+            </div>
+            <span style="font:700 18px/1.2 var(--font-display);color:var(--fg-3);">Field testing</span>
+            <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-2);">November – December</span>
+            <span style="font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);">Upcoming</span>
+          </li>
+        
+          <li style="padding:20px;border-radius:var(--radius-lg);background:transparent;border:1px solid var(--grey-200);display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <span style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;color:var(--fg-accent);">04</span>
+              
+            </div>
+            <span style="font:700 18px/1.2 var(--font-display);color:var(--fg-3);">GILMO v2</span>
+            <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-2);">Mid December</span>
+            <span style="font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);">Upcoming</span>
+          </li>
+        
+          <li style="padding:20px;border-radius:var(--radius-lg);background:transparent;border:1px solid var(--grey-200);display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <span style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;color:var(--fg-accent);">05</span>
+              
+            </div>
+            <span style="font:700 18px/1.2 var(--font-display);color:var(--fg-3);">Open-water testing &amp; concept 2</span>
+            <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-2);">January – April</span>
+            <span style="font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);">Upcoming</span>
+          </li>
+        
+          <li style="padding:20px;border-radius:var(--radius-lg);background:transparent;border:1px solid var(--grey-200);display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <span style="font:700 12px/1.2 var(--font-body);letter-spacing:.08em;color:var(--fg-accent);">06</span>
+              
+            </div>
+            <span style="font:700 18px/1.2 var(--font-display);color:var(--fg-3);">Final prototype</span>
+            <span style="font:400 13px/1.3 var(--font-body);color:var(--fg-2);">End of May</span>
+            <span style="font:700 11px/1 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3);">Upcoming</span>
+          </li>
+        
+      </ol>
+      <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding-top:8px;">
+        <a href="https://www.linkedin.com/company/lomvi-robotics" target="_blank" class="btn btn-secondary" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;height:44px;padding:0 20px;box-sizing:border-box;font:700 16px/1 var(--font-display);letter-spacing:-0.005em;color:var(--fg-1);background:transparent;border:1.5px solid var(--border-strong);border-radius:14px 3px 14px 3px;cursor:pointer;text-decoration:none;white-space:nowrap;"><span>Follow our journey</span><span aria-hidden="true" style="display:inline-block;flex:none;width:18px;height:18px;background:currentColor;-webkit-mask:url(https://unpkg.com/lucide-static@0.460.0/icons/arrow-up-right.svg) center/contain no-repeat;mask:url(https://unpkg.com/lucide-static@0.460.0/icons/arrow-up-right.svg) center/contain no-repeat;"></span></a>
+        <span style="font:400 15px/1.4 var(--font-body);color:var(--fg-2);">Build updates and test days on LinkedIn.</span>
+      </div>
+    </div>
+  </section>
+
+  
+    </div>
+  
+
+  
+
+  
+
+  
+
+<footer style="background:var(--depth-10);color:var(--fg-inverse-2);">
+    <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
+      <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+        <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;">
+        <div style="width:1px;height:40px;background:var(--border-on-dark);"></div>
+        <img src="../images/eth-zurich.png" alt="ETH Zürich" style="height:28px;filter:brightness(0) invert(1);">
+        <img src="../images/srl-square-white.png" alt="Soft Robotics Lab" style="height:44px;">
+        <div style="margin-left:auto;display:flex;align-items:center;gap:20px;">
+          
+            <a href="https://www.linkedin.com/company/lomvi-robotics" target="_blank" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/linkedin.svg" alt="LinkedIn" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.instagram.com/lomvi.robotics/" target="_blank" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/instagram.svg" alt="Instagram" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.youtube.com/@lomvi-robotics" target="_blank" aria-label="YouTube" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/youtube.svg" alt="YouTube" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+            <a href="https://www.facebook.com/profile.php?id=61594476253714" target="_blank" aria-label="Facebook" style="display:flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--lomvi-ice);opacity:.85;transition:opacity var(--dur-base) var(--ease-glide);" class="social">
+              <img src="../images/facebook.svg" alt="Facebook" style="width:22px;height:22px;display:block;filter:brightness(0) invert(1);">
+            </a>
+          
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--border-on-dark);font:400 13px/1.5 var(--font-body);">
+        <span style="display:flex;gap:20px;flex-wrap:wrap;"><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../project/'">Project</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../progress/'">Progress</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../team/'">Team</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../partners/'">Partners</span><span style="cursor:pointer;color:var(--lomvi-ice);" onclick="location.href='../contact/'">Contact</span></span>
+        
+        <span style="display:flex;gap:20px;"><a href="#" style="color:var(--fg-inverse-2);">Imprint</a><a href="#" style="color:var(--fg-inverse-2);">Privacy</a><span>© 2026 Lomvi Robotics</span></span>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
