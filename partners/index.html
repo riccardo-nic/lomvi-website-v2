@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div style="position:relative;background:var(--lomvi-ice);">
+<div style="position:relative;background:var(--lomvi-ice);min-height:100vh;display:flex;flex-direction:column;">
 
   <header style="position:fixed;top:0;left:0;right:0;z-index:30;background:transparent;border-bottom:1px solid transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:background var(--dur-slow) var(--ease-glide);" id="site-header">
-    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+    <div style="max-width:1440px;margin:0 auto;padding:16px clamp(24px,4vw,64px);box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
       <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;display:block;cursor:pointer;" onclick="location.href='../'" id="site-logo">
       <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;" class="nav-desktop">
         
@@ -45,7 +45,7 @@
 <div style="height:96px;background:var(--lomvi-koerper);"></div>
 <!-- PARTNERS -->
   <section id="partners" data-screen-label="Partners" style="padding:120px 0;">
-    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:56px;">
+    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(24px,4vw,64px);box-sizing:border-box;display:flex;flex-direction:column;gap:56px;">
       <div style="display:flex;flex-wrap:wrap;gap:32px 48px;">
         <h2 style="flex:1 1 280px;margin:0;font:700 clamp(28px,3vw,40px)/1.1 var(--font-display);letter-spacing:-0.02em;color:var(--fg-1);">What partners get</h2>
         <div style="flex:2 1 560px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:32px 24px;">
@@ -71,15 +71,15 @@
       <div style="display:flex;flex-wrap:wrap;gap:32px 48px;">
         <h2 style="flex:1 1 280px;margin:0;font:700 clamp(28px,3vw,40px)/1.1 var(--font-display);letter-spacing:-0.02em;color:var(--fg-1);">Your audience</h2>
         <div style="flex:2 1 560px;min-width:0;display:flex;flex-direction:column;gap:20px;">
-          <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,140px),1fr));border-top:1.5px solid var(--fg-1);">
+          <ul style="list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:space-between;column-gap:32px;border-top:1.5px solid var(--fg-1);border-bottom:1px solid var(--grey-200);">
             
-              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 16px 18px 0;border-bottom:1px solid var(--grey-200);">ETH students</li>
+              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 0;">ETH students</li>
             
-              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 16px 18px 0;border-bottom:1px solid var(--grey-200);">Researchers</li>
+              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 0;">Researchers</li>
             
-              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 16px 18px 0;border-bottom:1px solid var(--grey-200);">Industry</li>
+              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 0;">Industry</li>
             
-              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 16px 18px 0;border-bottom:1px solid var(--grey-200);">General public</li>
+              <li style="font:700 19px/1.25 var(--font-display);color:var(--fg-1);padding:18px 0;">General public</li>
             
           </ul>
           <p style="margin:0;max-width:560px;font:400 16px/1.55 var(--font-body);color:var(--fg-2);text-wrap:pretty;">All of them come together at the ETH Focus Project Rollout, where Lomvi presents its final prototype.</p>
@@ -113,8 +113,8 @@
 
   
 
-<footer style="background:var(--depth-10);color:var(--fg-inverse-2);">
-    <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
+<footer style="margin-top:auto;background:var(--depth-10);color:var(--fg-inverse-2);">
+    <div style="max-width:1440px;margin:0 auto;padding:56px clamp(24px,4vw,64px) 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
       <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
         <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;">
         <div style="width:1px;height:40px;background:var(--border-on-dark);"></div>

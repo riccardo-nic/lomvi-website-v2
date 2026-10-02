@@ -202,3 +202,36 @@ a:hover{color:var(--lomvi-akzent)}
   .team-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
   .sup-grid{grid-template-columns:minmax(0,1fr)!important}
 }
+
+/* wider layout + team photo */
+.team-photo{aspect-ratio:2/1;object-fit:cover;object-position:center bottom}
+@media (max-width:759px){.team-photo{aspect-ratio:3/2}}
+
+/* Team Steckbrief */
+.sb-member{cursor:pointer}
+.sb-member img{transition:transform var(--dur-base) var(--ease-glide),box-shadow var(--dur-base) var(--ease-glide);box-shadow:var(--shadow-1)}
+.sb-member:hover img{transform:translateY(-3px);box-shadow:var(--shadow-3)}
+.sb-scrim{position:fixed;inset:0;z-index:60;background:rgba(5,22,28,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box}
+.sb-scrim[hidden]{display:none}
+.sb-card{position:relative;width:100%;max-width:640px;max-height:calc(100vh - 48px);overflow:auto;background:#fff;border-radius:var(--radius-fin);box-shadow:var(--shadow-3);display:grid;grid-template-columns:240px minmax(0,1fr)}
+.sb-img{width:100%;height:100%;min-height:240px;object-fit:cover;object-position:center top;display:block;background:var(--lomvi-ice)}
+.sb-body{padding:32px 28px 28px;display:flex;flex-direction:column;gap:16px}
+.sb-eyebrow{font:700 12px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-accent)}
+.sb-name{margin:0;font:700 28px/1.1 var(--font-display);letter-spacing:-.015em;color:var(--fg-1)}
+.sb-field{display:flex;flex-direction:column;gap:4px}
+.sb-label{font:700 12px/1.2 var(--font-body);letter-spacing:.08em;text-transform:uppercase;color:var(--fg-3)}
+.sb-study{font:400 16px/1.45 var(--font-body);color:var(--fg-1)}
+.sb-bio{margin:0;font:400 16px/1.55 var(--font-body);color:var(--fg-2)}
+.sb-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border:0;border-radius:50%;background:rgba(255,255,255,.9);color:var(--fg-1);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0;box-shadow:var(--shadow-1)}
+@media (max-width:759px){.sb-card{grid-template-columns:minmax(0,1fr)}.sb-img{max-height:320px}}
+.sb-roles{gap:12px;padding-top:4px}
+.sb-role-box{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:var(--radius-md);background:var(--lomvi-ice)}
+.sb-role-box.sb-tint{background:var(--lomvi-bauch)}
+.sb-role-title{font:700 15px/1.2 var(--font-display);color:var(--fg-1)}
+.sb-role-box p{margin:0;font:400 15px/1.5 var(--font-body);color:var(--fg-2)}
+.sb-card{overflow-x:hidden;overflow-y:auto;align-items:start}
+.sb-img{height:auto;min-height:0;aspect-ratio:4/5;object-position:center 15%}
+@media (max-width:759px){.sb-img{aspect-ratio:1/1;max-height:none}}
+.sb-card{align-items:stretch}
+.sb-img{height:100%;min-height:300px;aspect-ratio:auto}
+@media (max-width:759px){.sb-img{height:auto;min-height:0;aspect-ratio:1/1}}

@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<div style="position:relative;background:var(--lomvi-ice);">
+<div style="position:relative;background:var(--lomvi-ice);min-height:100vh;display:flex;flex-direction:column;">
 
   <header style="position:fixed;top:0;left:0;right:0;z-index:30;background:transparent;border-bottom:1px solid transparent;backdrop-filter:none;-webkit-backdrop-filter:none;transition:background var(--dur-slow) var(--ease-glide);" id="site-header">
-    <div style="max-width:1240px;margin:0 auto;padding:16px 32px;box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
+    <div style="max-width:1440px;margin:0 auto;padding:16px clamp(24px,4vw,64px);box-sizing:border-box;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
       <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;display:block;cursor:pointer;" onclick="location.href='../'" id="site-logo">
       <nav style="display:flex;align-items:center;gap:28px;flex-wrap:wrap;" class="nav-desktop">
         
@@ -39,7 +39,7 @@
 <div style="height:96px;background:var(--lomvi-koerper);"></div>
 <!-- WHY -->
   <section id="why" data-screen-label="Why" style="padding:120px 0;">
-    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:64px;align-items:center;">
+    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(24px,4vw,64px);box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:64px;align-items:center;">
       <div style="display:flex;flex-direction:column;gap:20px;">
         <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:var(--fg-1);text-wrap:balance;">Most underwater robots are too loud for the life they study.</h2>
         <p style="margin:0;font:300 20px/1.5 var(--font-body);color:var(--fg-2);text-wrap:pretty;">Propellers create noise, turbulence and a rigid hull that animals avoid. Researchers end up observing a disturbed ecosystem, we observe an undisturbed one.</p>
@@ -53,7 +53,7 @@
 
   <!-- HOW -->
   <section id="how" data-screen-label="How it works" style="padding:120px 0;background:#fff;border-top:1px solid var(--border-tint);border-bottom:1px solid var(--border-tint);">
-    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:56px;">
+    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(24px,4vw,64px);box-sizing:border-box;display:flex;flex-direction:column;gap:56px;">
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:32px 64px;align-items:end;">
         <div style="display:flex;flex-direction:column;gap:20px;">
           <h2 style="margin:0;font:700 clamp(36px,4.5vw,56px)/1.05 var(--font-display);letter-spacing:-0.025em;color:var(--fg-1);">Wings, not propellers.</h2>
@@ -62,7 +62,7 @@
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;">
         <img src="../images/wingstroke-sequence.jpg" alt="Guillemot wingstroke sequence" style="width:100%;height:auto;mix-blend-mode:multiply;display:block;">
-        <div style="font:400 13px/1.4 var(--font-body);color:var(--fg-3);">Guillemot wingstroke sequence, the reference for Lomvi's wing motion</div>
+        <div style="font:400 13px/1.4 var(--font-body);color:var(--fg-3);">Guillemot wingstroke sequence, the reference for Lomvi's wing motion · Source: R. J. Lock, R. Vaidyanathan &amp; S. Burgess, <em>Morphing modes of mobility in natural and engineered systems</em>, Department of Mechanical Engineering, University of Bristol</div>
       </div>
       <ol style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:24px;">
         
@@ -90,7 +90,7 @@
 
   <!-- ROBOT -->
   <section data-screen-label="The robot" style="padding:120px 0;background:var(--gradient-depth);color:var(--lomvi-ice);">
-    <div style="max-width:1240px;margin:0 auto;padding:0 32px;box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:64px;align-items:center;">
+    <div style="max-width:1440px;margin:0 auto;padding:0 clamp(24px,4vw,64px);box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:64px;align-items:center;">
       <div style="display:flex;flex-direction:column;gap:10px;">
         <div style="width:100%;height:440px;border-radius:var(--radius-fin);background:repeating-linear-gradient(-45deg,var(--lomvi-ice) 0 22px,var(--lomvi-bauch) 22px 44px);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;"><span style="font:700 16px/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--fg-2);padding:10px 14px;border:1.5px solid var(--fg-3);border-radius:var(--radius-sm);background:var(--lomvi-ice);">Placeholder</span><span style="font:400 22px/1.2 var(--font-body);color:var(--fg-2);">GILMO v1</span></div>
         
@@ -125,8 +125,8 @@
 
   
 
-<footer style="background:var(--depth-10);color:var(--fg-inverse-2);">
-    <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
+<footer style="margin-top:auto;background:var(--depth-10);color:var(--fg-inverse-2);">
+    <div style="max-width:1440px;margin:0 auto;padding:56px clamp(24px,4vw,64px) 40px;box-sizing:border-box;display:flex;flex-direction:column;gap:40px;">
       <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
         <img src="../images/lomvi-logo-white.svg" alt="Lomvi Robotics" style="height:44px;">
         <div style="width:1px;height:40px;background:var(--border-on-dark);"></div>
